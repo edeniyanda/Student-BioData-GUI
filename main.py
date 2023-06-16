@@ -14,5 +14,9 @@ bg_img = ImageTk.PhotoImage(file="assets/images/background.jpg")
 bg_label = Label(root, image = bg_img)
 bg_label.place(x=0, y=0)
 
+login_frame = Frame(root)
+login_frame.place(x=440, y=300)
+
+
 
 root.mainloop()

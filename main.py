@@ -8,7 +8,7 @@ root.geometry('1280x690+0+0')
 root.resizable(False,False)
 
 
-bg_img = ImageTk.PhotoImage(file="assets/images/bg2.jpg")
+bg_img = ImageTk.PhotoImage(file="assets/images/background.jpg")
 
 
 bg_label = Label(root, image = bg_img)

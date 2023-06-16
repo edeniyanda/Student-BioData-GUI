@@ -4,3 +4,7 @@ This GitHub repository houses the code for a Student Bio Data Form developed usi
 
 
 Background Photo by Tirachard Kumtanom: https://www.pexels.com/photo/black-ball-point-pen-with-brown-spiral-notebook-733852/
+
+login_image from https://www.flaticon.com/free-icons/students
+
+<a href="https://www.flaticon.com/free-icons/student" title="student icons">Student icons created by Freepik - Flaticon</a>

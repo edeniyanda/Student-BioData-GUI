@@ -1,6 +1,16 @@
 from tkinter import *
+from tkinter import messagebox
 from PIL import ImageTk
 
+
+
+def login():
+    if user_name_entry.get() == "" or password_entry.get() == "":
+        messagebox.showerror("Error", "Fields cannot be blank")
+    elif user_name_entry.get() == "Eden" and password_entry.get() == "1234":
+        messagebox.showinfo("Welcome😊","Sign in Successful")
+    else:
+        messagebox.showerror("Login Fail", "Invalid username or password")
 
 root = Tk()
 
@@ -30,19 +40,23 @@ student_logo_label.grid(row=0, column=0, columnspan=2, pady=10)
 
 username_image = PhotoImage(file="assets/images/profile.png")
 
-username_label = Label(login_frame, image=username_image , text="Username", compound=LEFT, font=('times new roman', 20,"bold"),bg="white")
+username_label = Label(login_frame, image=username_image , text="Username", compound=LEFT, font=('times new roman', 20,"normal"),bg="white")
 username_label.grid(row=1, column=0, pady=10, padx=20)
 
-user_name_entry = Entry(login_frame,font=('times new roman', 20,"bold")).grid(row=1, column=1, pady=10, padx=20)
+user_name_entry = Entry(login_frame,font=('times new roman', 20))
+user_name_entry.grid(row=1, column=1, pady=10, padx=20)
 
 # Password Entry
-password_image = PhotoImage(file="assets/images/profile.png")
-password_label = Label(login_frame, image=password_image, text="Password", compound=LEFT, font=('times new roman', 20,"bold"),bg="white")
+password_image = PhotoImage(file="assets/images/padlock.png")
+password_label = Label(login_frame, image=password_image, text="Password", compound=LEFT, font=('times new roman', 20,"normal"),bg="white")
 password_label.grid(row=2, column=0, pady=10, padx=20)
 
-password_entry = Entry(login_frame,font=('times new roman', 20,"bold")).grid(row=2, column=1, pady=10, padx=20)
+password_entry = Entry(login_frame,font=('Calibri', 20, "normal"))
+password_entry.grid(row=2, column=1, pady=10, padx=20)
 
-
+# Login Button
+login_button = Button(login_frame, text="Login", font=('times new roman', 14), width=27, fg="white", bg="black", cursor="hand2", command=login)
+login_button.grid(row=3,column=1, pady=10)
 
 
 root.mainloop()

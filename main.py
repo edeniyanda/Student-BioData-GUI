@@ -9,6 +9,7 @@ def login():
         messagebox.showerror("Error", "Fields cannot be blank")
     elif user_name_entry.get() == "Eden" and password_entry.get() == "1234":
         messagebox.showinfo("Welcome😊","Sign in Successful")
+        import progbar
         root.destroy()
         import screen1
     else:

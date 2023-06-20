@@ -9,6 +9,8 @@ def login():
         messagebox.showerror("Error", "Fields cannot be blank")
     elif user_name_entry.get() == "Eden" and password_entry.get() == "1234":
         messagebox.showinfo("Welcome😊","Sign in Successful")
+        root.destroy()
+        import screen1
     else:
         messagebox.showerror("Login Fail", "Invalid username or password")
 
@@ -17,7 +19,7 @@ root = Tk()
 # Ser Screen Size
 root.geometry('1280x690+0+0')
 root.resizable(False,False)
-root.title("Student BioData Form")
+root.title("Student BioData Form9Login Screen")
 
 # Load Background image
 # bg_img = ImageTk.PhotoImage(file="assets/images/background.jpg")

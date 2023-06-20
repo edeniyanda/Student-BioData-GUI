@@ -4,18 +4,18 @@ import datetime
 
 
 
-root = Tk()
+screen1_wimdow = Tk()
 
 # Ser Screen Size
-root.geometry('1280x690+0+0')
-root.resizable(False,False)
-root.title("Student BioData Form- DataBase")
+screen1_wimdow.geometry('1280x690+0+0')
+screen1_wimdow.resizable(False,False)
+screen1_wimdow.title("Student BioData Form- DataBase")
 
 
 
 
 
-Label(root, text="Welcome To DataBase", font=("Calibri", 25, "normal")).place(x=500, y= 10)
+Label(screen1_wimdow, text="Welcome To DataBase", font=("Calibri", 25, "normal")).place(x=500, y= 10)
 
 
-root.mainloop()
+screen1_wimdow.mainloop()

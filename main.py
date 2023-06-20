@@ -51,7 +51,7 @@ password_image = PhotoImage(file="assets/images/padlock.png")
 password_label = Label(login_frame, image=password_image, text="Password", compound=LEFT, font=('times new roman', 20,"normal"),bg="white")
 password_label.grid(row=2, column=0, pady=10, padx=20)
 
-password_entry = Entry(login_frame,font=('Calibri', 20, "normal"))
+password_entry = Entry(login_frame,font=('Calibri', 20, "normal"), show="*")
 password_entry.grid(row=2, column=1, pady=10, padx=20)
 
 # Login Button

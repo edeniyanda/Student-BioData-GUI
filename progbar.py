@@ -8,17 +8,17 @@ def start():
 
     bar["value"] = 0
     while currently_at < end_at:
-        percent.set(str((currently_at / end_at) * 100) + "%")
+        percent.set(str(int((currently_at / end_at) * 100)) + "%")
         time.sleep(0.2)
-        bar["value"] += 10
-        currently_at += 1
+        bar["value"] += 5
+        currently_at += 0.5
         prog_root.update_idletasks()
 
     prog_root.destroy()
     import screen1
 
 prog_root = Tk()
-prog_root.geometry("400x100")
+prog_root.geometry("400x100+100+100")
 prog_root.resizable(False, False)
 prog_root.title("Logging in...")
 
